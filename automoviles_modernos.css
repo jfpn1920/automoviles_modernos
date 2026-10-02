@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #e9edf0;
+    color: #20262b;
+    min-height: 100vh;
+}
+/*---------------------------------*/
+/*--|estilo_automoviles_modernos|--*/
+/*---------------------------------*/
+.encabezado {
+    background: #15191d;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.icono_encabezado {
+    width: 72px;
+    height: 72px;
+    background: #e84a3a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    transform: skew(-5deg);
+}
+.etiqueta {
+    color: #e84a3a;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.encabezado h1 {
+    font-size: 35px;
+    margin: 6px 0;
+}
+.encabezado p {
+    color: #b8bec3;
+}
+/*----------------------------------------------*/
+/*--|estilo_contenido_de_vehiculos_destacados|--*/
+/*----------------------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+.introduccion {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.icono_intro {
+    width: 55px;
+    height: 55px;
+    background: #20272d;
+    color: #f05a49;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+.introduccion h2 {
+    margin-bottom: 5px;
+}
+.introduccion p {
+    color: #697177;
+}
+/*---------------------------------*/
+/*--|estilo_lista_de_automoviles|--*/
+/*---------------------------------*/
+.lista_automoviles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.automovil {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+.imagen_auto {
+    height: 170px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 65px;
+}
+.auto_uno {
+    background: linear-gradient(135deg, #7d2525, #db4437);
+}
+.auto_dos {
+    background: linear-gradient(135deg, #1d566d, #35a7c7);
+}
+.auto_tres {
+    background: linear-gradient(135deg, #4b5257, #899197);
+}
+.imagen_auto span {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 6px 9px;
+    border-radius: 5px;
+}
+.datos_auto {
+    padding: 22px;
+}
+.categoria_auto {
+    font-size: 11px;
+    color: #e04b3b;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.nombre_auto {
+    font-size: 23px;
+    margin: 7px 0 20px;
+}
+.datos_auto label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 12px 0 6px;
+}
+.datos_auto input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4d9dc;
+    border-radius: 6px;
+    outline: none;
+    background: #f8f9fa;
+}
+.datos_auto input:focus {
+    border-color: #e04b3b;
+}
+.acciones_auto {
+    display: flex;
+    gap: 9px;
+    margin-top: 20px;
+}
+.acciones_auto button, #boton_restablecer {
+    border: none;
+    padding: 10px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton_guardar {
+    background: #26734d;
+    color: white;
+}
+.boton_restaurar {
+    background: #697177;
+    color: white;
+}
+.acciones_auto button:hover, #boton_restablecer:hover {
+    opacity: 0.85;
+}
+.acciones_auto i, #boton_restablecer i {
+    margin-right: 6px;
+}
+.mensaje_auto {
+    min-height: 20px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #26734d;
+}
+/*------------------------------------*/
+/*--|estilo_accion_restablecer_todo|--*/
+/*------------------------------------*/
+.acciones_generales {
+    text-align: center;
+    margin: 30px 0;
+}
+#boton_restablecer {
+    background: #b43737;
+    color: white;
+}
+#mensaje_general {
+    min-height: 22px;
+    margin-top: 12px;
+    color: #26734d;
+}

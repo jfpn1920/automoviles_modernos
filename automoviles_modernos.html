@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automoviles modernos</title>
+    <link rel="stylesheet" href="automoviles_modernos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="automoviles_modernos.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_automoviles_modernos|-->
+    <!----------------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+        <div>
+            <span class="etiqueta">GARAJE MODERNO</span>
+            <h1>Automóviles Modernos</h1>
+            <p>Explora y personaliza información de diferentes automóviles.</p>
+        </div>
+    </header>
+    <!-------------------------------------------------->
+    <!--|estructura_contenido_de_vehiculos_destacados|-->
+    <!-------------------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_intro">
+                <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <div>
+                <h2>Vehículos destacados</h2>
+                <p>Modifica los datos de cada automóvil y guárdalos.</p>
+            </div>
+        </section>
+        <!-------------------------->
+        <!--|lista_de_automoviles|-->
+        <!-------------------------->
+        <section class="lista_automoviles">
+            <article class="automovil" data-id="1">
+                <div class="imagen_auto auto_uno">
+                    <i class="fa-solid fa-car"></i>
+                    <span>01</span>
+                </div>
+                <div class="datos_auto">
+                    <span class="categoria_auto">DEPORTIVO</span>
+                    <h2 class="nombre_auto">Porsche 911</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Marca</label>
+                    <input type="text" class="campo_marca">
+                    <label>Año</label>
+                    <input type="number" class="campo_anio">
+                    <label>Precio</label>
+                    <input type="text" class="campo_precio">
+                    <div class="acciones_auto">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_auto"></p>
+                </div>
+            </article>
+            <article class="automovil" data-id="2">
+                <div class="imagen_auto auto_dos">
+                    <i class="fa-solid fa-car-side"></i>
+                    <span>02</span>
+                </div>
+                <div class="datos_auto">
+                    <span class="categoria_auto">ELÉCTRICO</span>
+                    <h2 class="nombre_auto">Tesla Model 3</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Marca</label>
+                    <input type="text" class="campo_marca">
+                    <label>Año</label>
+                    <input type="number" class="campo_anio">
+                    <label>Precio</label>
+                    <input type="text" class="campo_precio">
+                    <div class="acciones_auto">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_auto"></p>
+                </div>
+            </article>
+            <article class="automovil" data-id="3">
+                <div class="imagen_auto auto_tres">
+                    <i class="fa-solid fa-car-rear"></i>
+                    <span>03</span>
+                </div>
+                <div class="datos_auto">
+                    <span class="categoria_auto">SUV</span>
+                    <h2 class="nombre_auto">Range Rover</h2>
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Marca</label>
+                    <input type="text" class="campo_marca">
+                    <label>Año</label>
+                    <input type="number" class="campo_anio">
+                    <label>Precio</label>
+                    <input type="text" class="campo_precio">
+                    <div class="acciones_auto">
+                        <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje_auto"></p>
+                </div>
+            </article>
+        </section>
+        <!----------------------------->
+        <!--|accion_restablecer_todo|-->
+        <!----------------------------->
+        <section class="acciones_generales">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todos</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>
